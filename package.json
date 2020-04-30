@@ -1,0 +1,28 @@
+{
+  "name": "mocdoc",
+  "version": "1.0.0",
+  "description": "A fake DynamoDB DocumentClient",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stripedpajamas/mocdoc.git"
+  },
+  "keywords": [
+    "aws",
+    "dynamodb",
+    "test",
+    "mock"
+  ],
+  "author": "Peter Squicciarini <stripedpajamas273@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stripedpajamas/mocdoc/issues"
+  },
+  "homepage": "https://github.com/stripedpajamas/mocdoc#readme",
+  "devDependencies": {
+    "standard": "^14.3.3"
+  }
+}
