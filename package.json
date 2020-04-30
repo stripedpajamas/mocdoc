@@ -1,7 +1,7 @@
 {
   "name": "mocdoc",
   "version": "1.0.0",
-  "description": "A fake DynamoDB DocumentClient",
+  "description": "In-memory DynamoDB, designed with parallel testing in mind.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,8 @@
     "aws",
     "dynamodb",
     "test",
-    "mock"
+    "parallel",
+    "integration"
   ],
   "author": "Peter Squicciarini <stripedpajamas273@gmail.com>",
   "license": "MIT",
@@ -24,5 +25,10 @@
   "homepage": "https://github.com/stripedpajamas/mocdoc#readme",
   "devDependencies": {
     "standard": "^14.3.3"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dynalite": "^3.1.6",
+    "get-port": "^5.1.1"
   }
 }
