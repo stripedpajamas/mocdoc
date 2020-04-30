@@ -13,7 +13,7 @@ const AWS = require('aws-sdk')
 const { DynamoDBMemoryServer } = require('mocdoc')
 
 const DynamoDB = new DynamoDBMemoryServer()
-const endpoint = await dynamo.getEndpoint()
+const endpoint = await DynamoDB.getEndpoint()
 
 const dynamoClient = AWS.DynamoDB({ endpoint })
 ```
