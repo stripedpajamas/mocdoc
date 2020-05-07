@@ -19,7 +19,6 @@ const dynamoClient = AWS.DynamoDB({ endpoint })
 ```
 
 ## Todo
-- [ ] Unit tests
 - [ ] Debug logging
 
 ## License

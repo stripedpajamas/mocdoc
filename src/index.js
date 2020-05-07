@@ -14,11 +14,13 @@ class DynamoDBMemoryServer {
     this.started = false
     this.host = opts.host || '127.0.0.1'
     this.port = opts.port
+
+    this.getPort = getPort
   }
 
   async getEndpoint () {
     const host = this.host
-    const port = this.port || await getPort()
+    const port = this.port || await this.getPort()
 
     this.port = port
 
