@@ -1,6 +1,6 @@
 {
   "name": "mocdoc",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "In-memory DynamoDB, designed with parallel testing in mind.",
   "main": "src/index.js",
   "scripts": {
