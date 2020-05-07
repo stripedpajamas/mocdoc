@@ -1,3 +1,5 @@
+const debug = require('debug')('mocdoc')
+
 const Dynalite = require('dynalite')
 const getPort = require('get-port')
 
@@ -27,6 +29,7 @@ class DynamoDBMemoryServer {
     const endpoint = `http://${host}:${port}`
 
     if (!this.started) {
+      debug('starting dynalite instance on %s:%s', this.host, this.port)
       await startDynamo(this.instance, host, port)
       this.started = true
     }
@@ -36,6 +39,7 @@ class DynamoDBMemoryServer {
 
   async close () {
     if (this.started) {
+      debug('stopping dynalite instance on %s:%s', this.host, this.port)
       this.instance.close()
       this.started = false
     }

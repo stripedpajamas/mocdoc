@@ -18,8 +18,7 @@ const endpoint = await DynamoDB.getEndpoint()
 const dynamoClient = AWS.DynamoDB({ endpoint })
 ```
 
-## Todo
-- [ ] Debug logging
+Debug logging is enabled with the `DEBUG=mocdoc` env var.
 
 ## License
 MIT
